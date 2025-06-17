@@ -11,7 +11,17 @@ let package = Package(
     targets: [
         .target(
             name: "SwiftNES",
-            path: "SwiftNES-iOS"
+            path: ".",
+            sources: [
+                "SwiftNES/Implementation",
+                "SwiftNES-iOS"
+            ],
+            exclude: [
+                "SwiftNES-iOS/Base.lproj",
+                "SwiftNES-iOS/Assets", 
+                "SwiftNES-iOS/Info",
+                "SwiftNESTests"
+            ]
         )
     ]
 )
