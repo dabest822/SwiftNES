@@ -11,19 +11,24 @@ let package = Package(
     targets: [
         .target(
             name: "SwiftNES",
+            dependencies: [],
             path: ".",
+            sources: [
+                "SwiftNES/Implementation",
+                "SwiftNES-iOS"
+            ],
             exclude: [
                 "SwiftNES-iOS/Base.lproj",
                 "SwiftNES-iOS/Assets.xcassets",
-                "SwiftNES-iOS/Info.plist",
-                "SwiftNES/Assets.xcassets",  // Exclude both Assets folders
+                "SwiftNES-iOS/Info.plist", 
+                "SwiftNES/Assets.xcassets",
                 "SwiftNES/Assets",
-                "SwiftNESTests",
-                "README.md",
-                "SwiftNES.xcodeproj",
                 "SwiftNES/Base.lproj",
-                "SwiftNES/Info.plist"
-            ]
+                "SwiftNES/Info.plist",
+                "SwiftNESTests",
+                "README.md"
+            ],
+            publicHeadersPath: nil
         )
     ]
 )
