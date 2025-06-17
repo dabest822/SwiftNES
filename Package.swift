@@ -11,8 +11,7 @@ let package = Package(
     targets: [
         .target(
             name: "SwiftNES",
-            path: "SwiftNES-iOS",
-            exclude: ["Info.plist"]
+            path: "SwiftNES-iOS"
         )
     ]
 )
