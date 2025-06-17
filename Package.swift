@@ -12,7 +12,8 @@ let package = Package(
         .target(
             name: "SwiftNES",
             path: ".",
-            exclude: ["Info.plist"]    // (only if there is one here)
+            exclude: ["Info.plist",
+                      "Assets.xcassets"]    // (only if there is one here)
         )
     ]
 )
