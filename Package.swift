@@ -14,10 +14,15 @@ let package = Package(
             path: ".",
             exclude: [
                 "SwiftNES-iOS/Base.lproj",
-                "SwiftNES-iOS/Assets", 
-                "SwiftNES-iOS/Info",
+                "SwiftNES-iOS/Assets.xcassets",
+                "SwiftNES-iOS/Info.plist",
+                "SwiftNES/Assets.xcassets",  // Exclude both Assets folders
+                "SwiftNES/Assets",
                 "SwiftNESTests",
-                "README.md"
+                "README.md",
+                "SwiftNES.xcodeproj",
+                "SwiftNES/Base.lproj",
+                "SwiftNES/Info.plist"
             ]
         )
     ]
