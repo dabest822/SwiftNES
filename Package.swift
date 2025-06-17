@@ -4,14 +4,14 @@ import PackageDescription
 let package = Package(
     name: "SwiftNES",
     defaultLocalization: "en",
-    platforms: [ .iOS(.v14) ],
+    platforms: [ .iOS(.v14), .macOS(.v12) ],
     products: [
         .library(name: "SwiftNES", targets: ["SwiftNES"])
     ],
     targets: [
         .target(
             name: "SwiftNES",
-            path: "SwiftNES",          // ← this folder **does** exist
+            path: ".",
             exclude: ["Info.plist"]    // (only if there is one here)
         )
     ]
